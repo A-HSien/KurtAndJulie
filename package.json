@@ -1,0 +1,19 @@
+{
+  "name": "my-wed",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "serve": "lite-server",
+    "build": "tsc && npm run sass",
+    "sass": "node-sass --output-style expanded --source-map true app/all.scss index.css"
+  },
+  "devDependencies": {
+    "bootstrap": "~4.0.0-alpha.6",
+    "lite-server": "^2.2.0",
+    "typescript": "~2.0.10",
+    "node-sass": "^4.5.0",
+    "systemjs": "^0.19.41"
+  },
+  "author": "a-hsien"
+}

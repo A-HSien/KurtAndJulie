@@ -1,0 +1,30 @@
+"use strict";
+var FullWindowToggleController_1 = require('./components/FullWindowToggleController');
+var MenuController_1 = require('./components/MenuController');
+var ShowcaseController_1 = require('./components/ShowcaseController');
+var HeaderController_1 = require('./sections/HeaderController');
+var AnnounceController_1 = require('./sections/AnnounceController');
+var GalleryController_1 = require('./sections/GalleryController');
+var StoryController_1 = require('./sections/StoryController');
+var RSVPController_1 = require('./sections/RSVPController');
+var PartyController_1 = require('./sections/PartyController');
+//db init
+var config = {
+    apiKey: "AIzaSyCiAAj1bTaHLocP5P-PlNZ7dEz0BOxUAj0",
+    databaseURL: "https://mywed-f3944.firebaseio.com"
+};
+firebase.initializeApp(config);
+//controllers
+var windowWidth = $(window).width();
+var windowHeight = $(window).height();
+var scrollMagicController = new ScrollMagic.Controller();
+new FullWindowToggleController_1.FullWindowToggleController();
+new MenuController_1.MenuController(windowHeight);
+new ShowcaseController_1.ShowcaseController();
+new HeaderController_1.HeaderController(scrollMagicController, windowHeight, windowWidth);
+new AnnounceController_1.AnnounceController(scrollMagicController, windowHeight, windowWidth);
+new GalleryController_1.GalleryController(scrollMagicController, windowHeight, windowWidth);
+new StoryController_1.StoryController(scrollMagicController, windowHeight, windowWidth);
+new RSVPController_1.RSVPController(scrollMagicController, windowHeight, windowWidth);
+new PartyController_1.PartyController();
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibWFpbi5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIm1haW4udHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IjtBQUdBLDJDQUEyQyx5Q0FBeUMsQ0FBQyxDQUFBO0FBQ3JGLCtCQUErQiw2QkFBNkIsQ0FBQyxDQUFBO0FBQzdELG1DQUFtQyxpQ0FBaUMsQ0FBQyxDQUFBO0FBRXJFLGlDQUFpQyw2QkFBNkIsQ0FBQyxDQUFBO0FBQy9ELG1DQUFtQywrQkFBK0IsQ0FBQyxDQUFBO0FBQ25FLGtDQUFrQyw4QkFBOEIsQ0FBQyxDQUFBO0FBQ2pFLGdDQUFnQyw0QkFBNEIsQ0FBQyxDQUFBO0FBQzdELCtCQUErQiwyQkFBMkIsQ0FBQyxDQUFBO0FBRTNELGdDQUFnQyw0QkFBNEIsQ0FBQyxDQUFBO0FBRzdELFNBQVM7QUFDVCxJQUFNLE1BQU0sR0FBRztJQUNYLE1BQU0sRUFBRSx5Q0FBeUM7SUFDakQsV0FBVyxFQUFFLG9DQUFvQztDQUNwRCxDQUFDO0FBQ0YsUUFBUSxDQUFDLGFBQWEsQ0FBQyxNQUFNLENBQUMsQ0FBQztBQUcvQixhQUFhO0FBQ2IsSUFBTSxXQUFXLEdBQUcsQ0FBQyxDQUFDLE1BQU0sQ0FBQyxDQUFDLEtBQUssRUFBWSxDQUFDO0FBQ2hELElBQU0sWUFBWSxHQUFHLENBQUMsQ0FBQyxNQUFNLENBQUMsQ0FBQyxNQUFNLEVBQVksQ0FBQztBQUNsRCxJQUFJLHFCQUFxQixHQUFHLElBQUksV0FBVyxDQUFDLFVBQVUsRUFBRSxDQUFDO0FBRXpELElBQUksdURBQTBCLEVBQUUsQ0FBQztBQUNqQyxJQUFJLCtCQUFjLENBQUMsWUFBWSxDQUFDLENBQUM7QUFDakMsSUFBSSx1Q0FBa0IsRUFBRSxDQUFDO0FBQ3pCLElBQUksbUNBQWdCLENBQUMscUJBQXFCLEVBQUUsWUFBWSxFQUFFLFdBQVcsQ0FBQyxDQUFDO0FBQ3ZFLElBQUksdUNBQWtCLENBQUMscUJBQXFCLEVBQUUsWUFBWSxFQUFFLFdBQVcsQ0FBQyxDQUFDO0FBQ3pFLElBQUkscUNBQWlCLENBQUMscUJBQXFCLEVBQUUsWUFBWSxFQUFFLFdBQVcsQ0FBQyxDQUFDO0FBQ3hFLElBQUksaUNBQWUsQ0FBQyxxQkFBcUIsRUFBRSxZQUFZLEVBQUUsV0FBVyxDQUFDLENBQUM7QUFDdEUsSUFBSSwrQkFBYyxDQUFDLHFCQUFxQixFQUFFLFlBQVksRUFBRSxXQUFXLENBQUMsQ0FBQztBQUNyRSxJQUFJLGlDQUFlLEVBQUUsQ0FBQyJ9

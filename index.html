@@ -1,0 +1,276 @@
+﻿<!doctype html>
+<!--[if lt IE 7 ]><html id="ie6" class="ie ie-old ie-super-old"><![endif]-->
+<!--[if IE 7 ]>   <html id="ie7" class="ie ie-old ie-super-old"><![endif]-->
+<!--[if IE 8 ]>   <html id="ie8" class="ie ie-old ie-super-old"><![endif]-->
+<!--[if IE 9 ]>   <html id="ie9" class="ie ie-old"><![endif]-->
+<!--[if gt IE 9]><!-->
+<html>
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="https://a-hsien.github.io/MyWed/assets/img/header.jpg" />
+    <title>MyWed</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <div id="full-window-toggle">
+        <i class="fa fa-lg fa-bars"></i>
+        <i class="fa fa-lg fa-arrow-left" style="display: none;color: rgba(255,255,255,0.8)"></i>
+    </div>
+
+    <nav id="menu" class="full-window-content full-window-content-hidden animation">
+        <ul>
+            <li data-scroll-to="#header"><i class="fa fa-home"></i> 首頁</li>
+            <li data-scroll-to="#announce"><i class="fa fa-map-o"></i> 宴客資訊</li>
+            <li data-scroll-to="#gallery-container"><i class="fa fa-camera-retro"></i> 婚紗攝影</li>
+            <li data-scroll-to="#form-container"><i class="fa fa-pencil-square-o"></i> 婚禮邀請</li>
+            <li data-scroll-to="#story-container"><i class="fa fa-picture-o"></i> 生活紀錄</li>
+        </ul>
+    </nav>
+    <div id="showcase" class="full-window-content full-window-content-hidden animation">
+    </div>
+
+    <div id="wrapper">
+        <!--header-->
+        <section id="header" class="blur-White">
+            <!--<img class="logo" src="assets/icon/logo.png">-->
+        </section>
+        <!--header end-->
+        <!--announce-->
+        <section id="announce" class="simple-background">
+            <div class="selfie-content  padding-top">
+                <div class="animation selfie-container selfie-container-left">
+                    <img src="assets/img/kurt.jpg" class="selfie">
+                    <h5 class="text-center">何克男</h5>
+                </div>
+                <div class="selfie-content-space"></div>
+                <div class="animation selfie-container selfie-container-right">
+                    <img src="assets/img/julie.jpg" class="selfie">
+                    <h5 class="text-center">林Juile</h5>
+                </div>
+            </div>
+            <div class="content padding-bottom
+                col-md-10 offset-md-1
+                col-lg-8 offset-lg-2">
+                哈囉~各位親朋好友~<br> Hello, loved ones!<br> 我們的婚禮即將來到｡
+                <br> Our wedding is right around the corner~<br> 誠摯邀請您來參加,一同玩樂慶祝｡
+                <br> Sincerely invite you to join our wedding party<br> and celebrate this wonderful event with us.
+            </div>
+        </section>
+        <!--announce end-->
+        <!--party-->
+        <section id="party" style="background-image: linear-gradient(to top, #f3e7e9 0%, #f6f1ed 50%, #e3eeff 100%);">
+            <div class="icon" style="background-image:url('./assets/icon/360/party.png')"></div>
+            <div class="content">
+                <div class="card">
+                    <div class="card-block">
+                        <h4 class="card-title">婚宴時間</h4>
+                        <p class="card-text">
+                            2017 年 9 月 30日 (六)
+                            <br> 晚上7點 準時開席 (溫馨提醒: 當天是上班日喔!)
+                            <br> Party Time: Saturday, September 30th, 2017 at 19:00 SHARP!
+                            <br> (Sweet note: It's a working day on September 30th!)
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-block">
+                        <h4 class="card-title">婚宴地點</h4>
+                        <p class="card-text">
+                            新莊 頤品大飯店 （新莊晶冠館)
+                            <br>新北市新莊區五工路66號7樓
+                            <br>Party Location:
+                            <br> 7th Floor, No. 66, Wugong Road, Xinzhuang District, New Taipei City, Taiwan
+                            <br>大眾交通：捷運A3站(新北產業園區)
+                            <br>MRT: New Taipei Industrial Park Station
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="clockdiv">
+                <div>
+                    <span class="days"></span>
+                    <div class="smalltext">Days</div>
+                </div>
+                <div>
+                    <span class="hours"></span>
+                    <div class="smalltext">Hours</div>
+                </div>
+                <div>
+                    <span class="minutes"></span>
+                    <div class="smalltext">Minutes</div>
+                </div>
+                <div>
+                    <span class="seconds"></span>
+                    <div class="smalltext">Seconds</div>
+                </div>
+            </div>
+            <div id="map-container">
+                <div class="map-content"></div>
+                <div class="location-marker"><i class="fa fa-child fa-lg" aria-hidden="true"></i></div>
+                <div class="location-marker location-marker-animation"></div>
+                <img class="map">
+            </div>
+        </section>
+        <!--party end-->
+        <!--gallery-->
+        <section id="gallery-container" class="simple-background">
+            <!--<div class="icon" style="background-image:url('./assets/icon/360/gallery.png')"></div>-->
+            <div class="assets-content"></div>
+        </section>
+        <!--gallery end-->
+        <!--program end-->
+        <!--form-->
+        <section id="form-container" class="simple-background">
+            <div class="icon" style="background-image:url( './assets/icon/360/rsvp.png')"></div>
+            <div id="rsvp-report"></div>
+            <div class="form-content padding-bottom 
+                col-xs-12 col-sm-10 offset-sm-1 col-md-8 offset-md-2 col-lg-6 offset-lg-3">
+                <div class="form-group row">
+                    <label class="col-form-label col-sm-5">請問您的全名？<br>Please fill in your Full Name.</label>
+                    <div class="col-sm-7">
+                        <input name="name" type="text" class="form-control">
+                        <div class="form-control-feedback"></div>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-form-label col-sm-5">請問您是否將參加我們的喜宴？<br>Would you like to Join the Party?</label>
+                    <div class="col-sm-7">
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input name="will-join" class="form-check-input" type="radio" value="true">
+                                是 Yes
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input name="will-join" class="form-check-input" type="radio" value="false" checked>
+                                否 No
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-form-label col-sm-5">請問有幾位會赴宴呢？<br>How many people will Come Along with You (including you)?</label>
+                    <div class="col-sm-7">
+                        <input name="people-number" class="form-control" type="text">
+                        <div class="form-control-feedback"></div>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-form-label col-sm-5">請問有幾位素食者呢？<br>How many in your group are Vegetarians (including you)?</label>
+                    <div class="col-sm-7">
+                        <input name="vegetarian-number" class="form-control" type="text">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-form-label col-sm-5">請問您是新郎或新娘的親友？<br>Bride's Side or Groom's Side? </label>
+                    <div class="col-sm-7">
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input name="is-groom-side" class="form-check-input" type="radio" value="true">
+                                新郎親友 Friends of the Groom
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input name="is-groom-side" class="form-check-input" type="radio" value="false" checked>
+                                新娘親友 Friends of the Bride
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-form-label col-sm-5">請問您想要收到喜帖嗎？<br>Would you like to receive the wedding invitation card ? </label>
+                    <div class="col-sm-7">
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input name="want-invitation-card" class="form-check-input" type="radio" value="true">
+                                是 Yes
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input name="want-invitation-card" class="form-check-input" type="radio" value="false" checked>
+                                否 No
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-sm-5 col-form-label">請填寫喜帖寄送地址<br>Mailing Address for wedding invitation card.</label>
+                    <div class="col-sm-7">
+                        <input name="address" type="text" class="form-control">
+                        <div class="form-control-feedback"></div>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-sm-5 col-form-label">請填寫您的聯絡電話<br>Phone Number please.</label>
+                    <div class="col-sm-7">
+                        <input name="phone-number" type="text" class="form-control">
+                    </div>
+                </div>
+                <div class="alert alert-success" style="display: none">
+                    <strong>已寄出!</strong>感謝您花時間填寫問卷.
+                </div>
+                <div class="form-group row" style="padding-top: 2rem">
+                    <div class="offset-sm-5 col-sm-4 col-xs-4">
+                        <button type="submit" class="btn btn-block js-submit">送出</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--form end-->
+        <!--story-->
+        <section id="story-container" class="simple-background">
+            <div class="assets-content"> </div>
+        </section>
+        <!--story end-->
+        <!--tks-->
+        <section id="tks-container" style="background-image: linear-gradient(
+            -20deg,  
+            #dfe9f3  0%, 
+            #e7f5f7  50%, 
+            #dfe9f3   100%);">
+            <div class="icon" style="background-image:url( './assets/icon/360/special-thanks.png')"></div>
+
+            <div class="padding-bottom" style="text-align:center">
+                <br><img src="./assets/img/hotel.png"></img>
+                <br><br><br>
+                <img src="./assets/img/sophia.jpg"></img>
+                <br>Makeup: May Chang
+                <br><br><br>
+                <img src="./assets/img/whitefever.jpg"></img>
+            </div>
+
+        </section>
+        <!--tks end-->
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.0.min.js" integrity="sha256-JAW99MJVpJBGcbzEuXk4Az05s/XyDdBomFqNlM3ic+I="
+        crossorigin=" anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/3.7.0/firebase.js"></script>
+
+    <script src="assets/system.src.js"></script>
+    <script src="assets/systemjs.config.js"></script>
+    <script>
+        System.import('app').catch(function (err) { conror(err); });
+    </script>
+
+</body>
+
+</html>
