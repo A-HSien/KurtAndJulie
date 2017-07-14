@@ -1,2 +1,2 @@
 # MyWed
-https://A-Hsien.github.io/MyWed/
+https://A-Hsien.github.io/KurtAndJulie/
