@@ -6,11 +6,11 @@ var StoryController = (function () {
         this.sectionName = '#story-container';
         this.isThumbnailInitiated = false;
         this.photos = [
-            'IMG_3551.jpg', 'IMG_3552.jpg', 'IMG_3553.jpg', 'IMG_3554.jpg', 'IMG_3555.jpg',
-            'IMG_3556.jpg', 'IMG_3557.jpg', 'IMG_3558.jpg', 'IMG_3559.jpg', 'IMG_3560.jpg',
-            'IMG_3561.jpg', 'IMG_3562.jpg', 'IMG_3563.jpg', 'IMG_3564.jpg', 'IMG_3565.jpg',
-            'IMG_3566.jpg', 'IMG_3567.jpg', 'IMG_3568.jpg', 'IMG_3569.jpg', 'IMG_3570.jpg',
-            'IMG_3571.jpg', 'IMG_3572.jpg', 'IMG_3573.jpg', 'IMG_3574.jpg',
+            'IMG_3551.JPG', 'IMG_3552.JPG', 'IMG_3553.JPG', 'IMG_3554.JPG', 'IMG_3555.JPG',
+            'IMG_3556.JPG', 'IMG_3557.JPG', 'IMG_3558.JPG', 'IMG_3559.JPG', 'IMG_3560.JPG',
+            'IMG_3561.JPG', 'IMG_3562.JPG', 'IMG_3563.JPG', 'IMG_3564.JPG', 'IMG_3565.JPG',
+            'IMG_3566.JPG', 'IMG_3567.JPG', 'IMG_3568.JPG', 'IMG_3569.JPG', 'IMG_3570.JPG',
+            'IMG_3571.JPG', 'IMG_3572.JPG', 'IMG_3573.JPG', 'IMG_3574.JPG',
         ];
         this.setLoadingImg();
         new ScrollMagic.Scene({
