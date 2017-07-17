@@ -22,11 +22,11 @@ export class HeaderController {
     private setTweenForImageIcon(scrollMagicController: any, windowHeight: number) {
 
         new ScrollMagic.Scene({
-            triggerElement: '#header img',
+            triggerElement: '#header .logo',
             triggerHook: '0.2',
             duration: windowHeight
         })
-            .setTween(TweenMax.to('#header img', 1, {
+            .setTween(TweenMax.to('#header .logo', 1, {
                 autoAlpha: 0,
                 scale: 0.5,
                 force3D: true

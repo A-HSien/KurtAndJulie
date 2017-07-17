@@ -8,12 +8,14 @@
     background: url("./assets/img/header.jpg") no-repeat center center;
     -webkit-background-size: cover;
     background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     .logo {
-        max-width: 60%;
-        max-height: 60%;
+        background: url("./assets/icon/logo1.png") no-repeat center center;
+        width: 60%;
+        height: 50%;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
     }
     @include media-breakpoint-down("sm") {
         .logo {
