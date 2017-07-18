@@ -15,11 +15,10 @@ section {
 .icon {
   background-repeat: no-repeat;
   background-position: center center;
-  -webkit-background-size: contain;
-  background-size: contain;
+  -webkit-background-size: initial;
+  background-size: initial;
   height: 10rem;
-  max-width: 40%;
-  margin: 1em auto 0 auto;
+  margin: 1em auto 1rem auto;
 }
 
 .animation {
