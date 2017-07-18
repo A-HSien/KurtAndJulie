@@ -28,7 +28,7 @@ var AnnounceController = (function () {
                 "featureType": "road",
                 "stylers": [
                     {
-                        "hue": "#5e00ff"
+                        "hue": "#a7c3de"
                     },
                     {
                         "saturation": -79
