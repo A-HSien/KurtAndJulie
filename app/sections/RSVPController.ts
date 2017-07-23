@@ -71,7 +71,7 @@ export class RSVPController {
 
         const reader = new FileReader();
         reader.onload = (file: any) => {
-            const rsvp = JSON.parse(file.target.result).rsvp;
+            const rsvp = JSON.parse(file.target.result).KurtAndJulie;
             const result = [];
             Object.keys(rsvp).forEach(key => {
                 let item = rsvp[key];
