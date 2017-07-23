@@ -109,7 +109,7 @@ section {
 .assets-content .photo {
   position: relative;
   width: 12.5%;
-  padding: 6.25% 0;
+  padding: 6.25vw 0;
   background-repeat: no-repeat;
   background-position: center center;
   -webkit-background-size: cover;
@@ -135,21 +135,21 @@ section {
 @media (max-width: 1199px) {
   .assets-content .photo {
     width: 16.66%;
-    padding: 8.33% 0;
+    padding: 8.33vw 0;
   }
 }
 
 @media (max-width: 991px) {
   .assets-content .photo {
     width: 25%;
-    padding: 12.5% 0;
+    padding: 12.5vw 0;
   }
 }
 
 @media (max-width: 575px) {
   .assets-content .photo {
     width: 50%;
-    padding: 25% 0;
+    padding: 25vw 0;
   }
 }
 
