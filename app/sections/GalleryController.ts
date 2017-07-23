@@ -12,12 +12,13 @@ export class GalleryController {
     private isThumbnailInitiated = false;
     private photos = [
         'LUKE3199.jpg', 'LUKE3413.jpg', 'LUKE3446.jpg', 'LUKE3531.jpg', 'LUKE3646.jpg',
-        'LUKE3649.jpg', 'LUKE3680.jpg', 'LUKE3733.jpg', 'LUKE3772.jpg', 'LUKE3817.jpg',
+        'LUKE3649.jpg', 'LUKE3680.jpg', 'LUKE3733.jpg', 'LUKE3772.jpg',
         'LUKE3820.jpg', 'LUKE3934.jpg', 'LUKE3996.jpg', 'LUKE4018.jpg', 'LUKE4161.jpg',
         'LUKE4208.jpg', 'LUKE4339.jpg', 'LUKE4363.jpg', 'LUKE4391.jpg', 'LUKE4486.jpg',
         'LUKE4545.jpg', 'LUKE4559.jpg', 'LUKE4612.jpg', 'LUKE4680.jpg'
     ];
     private videos = [
+        '522496324'
     ];
 
     constructor(
