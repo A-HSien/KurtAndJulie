@@ -35,7 +35,7 @@ export class AnnounceController {
     };
 
     private setCountdownClock() {
-        var deadline = new Date(2017, 9 - 1, 30);
+        var deadline = new Date(2017, 9 - 1, 30, 19); //2017-9-30
         new CountdownClock('clockdiv', deadline);
     };
 

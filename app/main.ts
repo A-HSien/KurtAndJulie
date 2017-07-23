@@ -11,7 +11,6 @@ import { GalleryController } from './sections/GalleryController';
 import { StoryController } from './sections/StoryController';
 import { RSVPController } from './sections/RSVPController';
 import { ProgramController } from './sections/ProgramController';
-import { PartyController } from './sections/PartyController';
 
 
 //db init
