@@ -35,4 +35,3 @@ new AnnounceController(scrollMagicController, windowHeight, windowWidth);
 new GalleryController(scrollMagicController, windowHeight, windowWidth);
 new StoryController(scrollMagicController, windowHeight, windowWidth);
 new RSVPController(scrollMagicController, windowHeight, windowWidth);
-new PartyController();
