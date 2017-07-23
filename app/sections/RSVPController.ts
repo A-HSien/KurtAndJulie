@@ -40,7 +40,7 @@ export class RSVPController {
         }
 
         const db = firebase.database();
-        const table = db.ref('/rsvp');
+        const table = db.ref('/KurtAndJulie');
         table.push(form.data);
         this.$ele.find('.js-submit').hide();
         this.$ele.find('.alert').fadeIn();
